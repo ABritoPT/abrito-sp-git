@@ -1,0 +1,118 @@
+PlayAds SDK
+===========
+
+Overview
+--------
+Integration process consists of the following steps:
+
+0. Requirements.
+1. Adding PlayAds SDK Android library project to your project.
+2. Modifying AndroidManifest.xml.
+3. Initializing the SDK.
+4. Showing promotions.
+5. ProGuard config.
+
+Requirements
+------------
+Android app that targets Android 2.2 and later.
+
+Adding Library
+--------------
+After unpacking the archive, you'll see a folder with a standard Android library project.
+It has to be imported into a workspace of your IDE of choice (e.g. Eclipse)
+and added to your existing app or game project.
+
+Modifying AndroidManifest.xml
+-----------------------------
+PlayAdsSDK uses the following permissions:
+
+   <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+And declares an Activity:
+
+   <activity
+       android:name="com.applift.playads.PlayAdsActivity"
+       android:taskAffinity="com.applift.playads"
+       android:theme="@style/Theme.PlayAds" />
+
+Initializing the SDK
+--------------------
+PlayAds SDK is initialized with a single method call:
+
+   PlayAds.init(Context ctx, int appId, String appSecret);
+
+where appId & appSecret are the values you've got from PlayAds.
+This will clear image cache & load initial settings.
+
+It might also make sense to create an implementation of PlayAdsListener:
+
+   private final PlayAdsListener listener = new PlayAdsListener() {
+
+      @Override
+      public void onCached(PlayAdsType type) {
+         L.i("Cached %s.", type);
+      }
+
+      @Override
+      public void onShown(PlayAdsType type) {
+         L.i("Shown %s.", type);
+      }
+
+      @Override
+      public void onTapped(PlayAdsPromo promo) {
+         L.i("Opening %s in Play Store.", promo);
+      }
+
+      @Override
+      public void onClosed(PlayAdsType type) {
+         L.i("Closed %s.", type);
+      }
+
+      @Override
+      public void onError(Exception ex) {
+         L.w("Oops: %s.", ex);
+      }
+
+   };
+   
+and register it right after init:
+
+   PlayAds.addListener(listener);
+
+Please note that there must be at least one strong reference to
+the listener (e.g. it could be a class member or an Activity could
+implement the interface).  
+
+Showing Promotions
+------------------
+PlayAds SDK has 4 methods that relate to showing promos:
+
+   cache()
+   show(Activity act)
+
+   cache(PlayAdsType type)
+   show(Activity act, PlayAdsType type)
+   
+As it's easy to tell from the names, a pair of methods is used to cache
+a promo while the other pair is used to display it.
+
+The PlayAdsTypes are:
+- GIFT_SCREEN
+- SCRATCH_SCREEN
+- GAME_LIST
+- SLOT_MACHINE
+- MEMORY_GAME
+- COVER_FLOW
+- LIGHT_WEIGHT
+
+While it is recommended to cache first, it's safe to call show(...) without caching.
+In this case the user will see a loading spinner until a promo is ready.
+
+* Listener's onClosed() callback is a good place to cache the next promo.
+
+ProGuard Config
+---------------
+If using ProGuard, include proguard.cfg that comes with the SDK.

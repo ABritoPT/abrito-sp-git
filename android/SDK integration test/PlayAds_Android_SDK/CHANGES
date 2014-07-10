@@ -1,0 +1,52 @@
+3.0.1 /2014-02-24/:
+	* Fixed an issue with PlayStore brought to the front.
+
+3.0.0 /2014-02-19/:
+	* Improved tablets support.
+	* Improved GameList appearance.
+	* Listener: onClosed() fired on back button press.
+	* Load settings on init.
+	* Performance improvements & minor fixes.
+
+2.7.3 /2014-01-15/:
+	* Added onClosed() callback to PlayAdsListener.
+
+2.7.2 /2013-12-19/:
+	* Updates settings to v1.8; use ETag.
+	* Fixed SlotMachine background stretching.
+	* Optionally disable submitting installed app list; use https.
+
+2.7.1 /2013-12-18/:
+	* Fixed OutOfMemoryException on ScratchScreen.
+
+2.7.0 /2013-12-09/:
+	* Improved rotation behavior.
+	* Reworked SlotMachine.
+	* Fixed an issue of ad not being dismissed.
+
+2.6.0 /2013-11-21/:
+	* Added Play Services Advertising ID tracking.
+	* Added intalled apps tracking.
+
+2.5.0 /2013-11-15/:
+	* Renamed to PlayAds (com.applift.sdk => com.applift.playads; AppLift* => PlayAds*)
+	* Renamed cacheRandom() & showRandom() to cache() & show().
+	* Fixed device falling asleep when switching from game.
+	* Fixed IllegalMonitorStateException in ScratchView.
+	* Added a sample app.
+
+2.0.1 /2013-11-05/:
+	* Fixed fullscreen mode detection (incl. Unity3D). 
+	* Fixed caching for ScratchScreen.
+	* Fixed impression recorded twice for GiftScreen.
+	* Check that AppLift.init(...) has been called first.
+	* AppLift.show(...) method now accepts the current Activity as first argument.
+	* precache=0 when show(...) is called without cache(...) first.
+	* Fixed a crasher on screen rotate.
+	* Added proguard.cfg.
+
+2.0.0 /2013-10-31/:
+	* New API.
+	* Ad precache support.
+	* New formats: lightweight, memory game, cower flow.
+	* Major internal reworkings to improve performance & stability.
