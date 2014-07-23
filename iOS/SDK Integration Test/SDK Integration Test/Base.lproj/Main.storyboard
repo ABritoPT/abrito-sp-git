@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Credits: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umy-f7-9Xl">
-                                <rect key="frame" x="20" y="89" width="136" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umy-f7-9Xl">
+                                <rect key="frame" x="145" y="89" width="52" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -98,16 +98,33 @@
                                     <action selector="showOW:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nop-V1-w0b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgj-a8-gq2">
+                                <rect key="frame" x="249" y="85" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateCredits" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qqo-gf-G95"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Credits: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgq-wh-4rP">
+                                <rect key="frame" x="20" y="89" width="127" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="checkBEButton" destination="SVP-k6-iwl" id="yKf-9p-j8k"/>
                         <outlet property="checkInterstitialButton" destination="UBD-5z-nwU" id="asa-S5-QMG"/>
-                        <outlet property="creditsTest" destination="umy-f7-9Xl" id="5lB-Nf-7Ez"/>
+                        <outlet property="creditsText" destination="umy-f7-9Xl" id="9gs-kK-EfN"/>
                         <outlet property="showBEButton" destination="sh0-Jc-F9E" id="tVv-ac-0Cx"/>
                         <outlet property="showInterstitialButton" destination="LNP-0u-yxT" id="BXl-Q0-YLO"/>
                         <outlet property="showOWButton" destination="na8-bn-KmA" id="3Yk-3w-z7J"/>
+                        <outlet property="updateCreditsButton" destination="Sgj-a8-gq2" id="uCy-Gi-eHi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

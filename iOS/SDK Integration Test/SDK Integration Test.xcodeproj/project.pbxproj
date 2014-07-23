@@ -23,6 +23,73 @@
 		D14D583B197FB5DD00FC1357 /* SDK_Integration_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D583A197FB5DD00FC1357 /* SDK_Integration_TestTests.m */; };
 		D14D5848197FE9CA00FC1357 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D5846197FE9CA00FC1357 /* MainViewController.m */; };
 		D14D5849197FE9CA00FC1357 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14D5847197FE9CA00FC1357 /* MainViewController.xib */; };
+		D14D58D71980048500FC1357 /* NSDictionary+SPSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D584D1980048500FC1357 /* NSDictionary+SPSerialization.m */; };
+		D14D58D81980048500FC1357 /* NSString+SPURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D584F1980048500FC1357 /* NSString+SPURLEncoding.m */; };
+		D14D58D91980048500FC1357 /* NSURL+SPDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58511980048500FC1357 /* NSURL+SPDescription.m */; };
+		D14D58DA1980048500FC1357 /* NSURL+SPParametersParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58531980048500FC1357 /* NSURL+SPParametersParsing.m */; };
+		D14D58DB1980048500FC1357 /* SPCloseX.png in Resources */ = {isa = PBXBuildFile; fileRef = D14D58551980048500FC1357 /* SPCloseX.png */; };
+		D14D58DC1980048500FC1357 /* SPActionIdValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58591980048500FC1357 /* SPActionIdValidator.m */; };
+		D14D58DD1980048500FC1357 /* SPAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D585B1980048500FC1357 /* SPAdvertisementViewController.m */; };
+		D14D58DE1980048500FC1357 /* SPAdvertiserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D585F1980048500FC1357 /* SPAdvertiserManager.m */; };
+		D14D58DF1980048500FC1357 /* SPAppIdValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58611980048500FC1357 /* SPAppIdValidator.m */; };
+		D14D58E01980048500FC1357 /* SPAppleAdvertiserIDProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58631980048500FC1357 /* SPAppleAdvertiserIDProvider.m */; };
+		D14D58E11980048500FC1357 /* SPBaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58651980048500FC1357 /* SPBaseNetwork.m */; };
+		D14D58E21980048500FC1357 /* SPBrandEngageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58671980048500FC1357 /* SPBrandEngageClient.m */; };
+		D14D58E31980048500FC1357 /* SPBrandEngageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D586A1980048500FC1357 /* SPBrandEngageViewController.m */; };
+		D14D58E41980048500FC1357 /* SPBrandEngageWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D586C1980048500FC1357 /* SPBrandEngageWebView.m */; };
+		D14D58E51980048500FC1357 /* SPBufferedLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D586E1980048500FC1357 /* SPBufferedLogger.m */; };
+		D14D58E61980048500FC1357 /* SPCallbackSendingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58701980048500FC1357 /* SPCallbackSendingOperation.m */; };
+		D14D58E71980048500FC1357 /* SPCloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58721980048500FC1357 /* SPCloseButton.m */; };
+		D14D58E81980048500FC1357 /* SPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58741980048500FC1357 /* SPConstants.m */; };
+		D14D58E91980048500FC1357 /* SPCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58761980048500FC1357 /* SPCountdownView.m */; };
+		D14D58EA1980048500FC1357 /* SPCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58781980048500FC1357 /* SPCredentials.m */; };
+		D14D58EB1980048500FC1357 /* SPCredentialsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D587A1980048500FC1357 /* SPCredentialsManager.m */; };
+		D14D58EC1980048500FC1357 /* SPHostAppBundleParametersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D587C1980048500FC1357 /* SPHostAppBundleParametersProvider.m */; };
+		D14D58EF1980048500FC1357 /* SPInterstitialClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58821980048500FC1357 /* SPInterstitialClient.m */; };
+		D14D58F01980048500FC1357 /* SPInterstitialEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58851980048500FC1357 /* SPInterstitialEvent.m */; };
+		D14D58F11980048500FC1357 /* SPInterstitialEventHub.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58871980048500FC1357 /* SPInterstitialEventHub.m */; };
+		D14D58F21980048500FC1357 /* SPInterstitialOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D588A1980048500FC1357 /* SPInterstitialOffer.m */; };
+		D14D58F31980048500FC1357 /* SPInterstitialResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D588C1980048500FC1357 /* SPInterstitialResponse.m */; };
+		D14D58F41980048500FC1357 /* SPJailbreakStatusProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D588E1980048500FC1357 /* SPJailbreakStatusProvider.m */; };
+		D14D58F51980048500FC1357 /* SPLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58901980048500FC1357 /* SPLoadingIndicator.m */; };
+		D14D58F61980048500FC1357 /* SPLocaleParametersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58921980048500FC1357 /* SPLocaleParametersProvider.m */; };
+		D14D58F71980048500FC1357 /* SPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58951980048500FC1357 /* SPLogger.m */; };
+		D14D58F81980048500FC1357 /* SPMacAddressProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58971980048500FC1357 /* SPMacAddressProvider.m */; };
+		D14D58F91980048500FC1357 /* SPMD5MacAddressProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58991980048500FC1357 /* SPMD5MacAddressProvider.m */; };
+		D14D58FA1980048500FC1357 /* SPMediationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D589B1980048500FC1357 /* SPMediationCoordinator.m */; };
+		D14D58FB1980048500FC1357 /* SPMicroBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D589D1980048500FC1357 /* SPMicroBrowserViewController.m */; };
+		D14D58FC1980048500FC1357 /* SPNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D589F1980048500FC1357 /* SPNetworkOperation.m */; };
+		D14D58FD1980048500FC1357 /* SPNetworkParametersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58A11980048500FC1357 /* SPNetworkParametersProvider.m */; };
+		D14D58FE1980048500FC1357 /* SPOfferWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58A31980048500FC1357 /* SPOfferWallViewController.m */; };
+		D14D58FF1980048500FC1357 /* SponsorPaySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58A51980048500FC1357 /* SponsorPaySDK.m */; };
+		D14D59001980048500FC1357 /* SPPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58A71980048500FC1357 /* SPPersistence.m */; };
+		D14D59011980048500FC1357 /* SPRandomID.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58A91980048500FC1357 /* SPRandomID.m */; };
+		D14D59021980048500FC1357 /* SPReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58AB1980048500FC1357 /* SPReachability.m */; };
+		D14D59031980048500FC1357 /* SPResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58AD1980048500FC1357 /* SPResourceLoader.m */; };
+		D14D59041980048500FC1357 /* SPSchemeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58B01980048500FC1357 /* SPSchemeParser.m */; };
+		D14D59051980048500FC1357 /* SPScreenMetricsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58B21980048500FC1357 /* SPScreenMetricsProvider.m */; };
+		D14D59061980048500FC1357 /* SPSDKFeaturesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58B41980048500FC1357 /* SPSDKFeaturesProvider.m */; };
+		D14D59071980048500FC1357 /* SPSDKVersionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58B61980048500FC1357 /* SPSDKVersionProvider.m */; };
+		D14D59081980048500FC1357 /* SPSemanticVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58B81980048500FC1357 /* SPSemanticVersion.m */; };
+		D14D59091980048500FC1357 /* SPSHA1MacAddressProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58BA1980048500FC1357 /* SPSHA1MacAddressProvider.m */; };
+		D14D590A1980048500FC1357 /* SPSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58BC1980048500FC1357 /* SPSignature.m */; };
+		D14D590B1980048500FC1357 /* SPSystemLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58BE1980048500FC1357 /* SPSystemLogger.m */; };
+		D14D590C1980048500FC1357 /* SPSystemParametersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58C01980048500FC1357 /* SPSystemParametersProvider.m */; };
+		D14D590D1980048500FC1357 /* SPSystemVersionChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58C21980048500FC1357 /* SPSystemVersionChecker.m */; };
+		D14D590E1980048500FC1357 /* SPTargetedNotificationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58C41980048500FC1357 /* SPTargetedNotificationFilter.m */; };
+		D14D590F1980048500FC1357 /* SPToast.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58C61980048500FC1357 /* SPToast.m */; };
+		D14D59101980048500FC1357 /* SPTPNGenericAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58C81980048500FC1357 /* SPTPNGenericAdapter.m */; };
+		D14D59111980048500FC1357 /* SPTPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58CA1980048500FC1357 /* SPTPNManager.m */; };
+		D14D59121980048500FC1357 /* SPTPNMediationTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58CC1980048500FC1357 /* SPTPNMediationTypes.m */; };
+		D14D59131980048500FC1357 /* SPURLGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58CF1980048500FC1357 /* SPURLGenerator.m */; };
+		D14D59141980048500FC1357 /* SPVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58D31980048500FC1357 /* SPVideoPlayerViewController.m */; };
+		D14D59151980048500FC1357 /* SPVirtualCurrencyServerConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D58D51980048500FC1357 /* SPVirtualCurrencyServerConnector.m */; };
+		D14D5917198005EA00FC1357 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D5916198005EA00FC1357 /* QuartzCore.framework */; };
+		D14D5919198005F300FC1357 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D5918198005F300FC1357 /* MediaPlayer.framework */; };
+		D14D591B198005FD00FC1357 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D591A198005FD00FC1357 /* SystemConfiguration.framework */; };
+		D14D591D1980060600FC1357 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D591C1980060600FC1357 /* CoreTelephony.framework */; };
+		D14D591F1980061000FC1357 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D591E1980061000FC1357 /* StoreKit.framework */; };
+		D14D59211980062700FC1357 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D59201980062700FC1357 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +125,147 @@
 		D14D5845197FE9CA00FC1357 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D14D5846197FE9CA00FC1357 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D14D5847197FE9CA00FC1357 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D14D584B1980048500FC1357 /* LoadableCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadableCategory.h; sourceTree = "<group>"; };
+		D14D584C1980048500FC1357 /* NSDictionary+SPSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SPSerialization.h"; sourceTree = "<group>"; };
+		D14D584D1980048500FC1357 /* NSDictionary+SPSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SPSerialization.m"; sourceTree = "<group>"; };
+		D14D584E1980048500FC1357 /* NSString+SPURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SPURLEncoding.h"; sourceTree = "<group>"; };
+		D14D584F1980048500FC1357 /* NSString+SPURLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SPURLEncoding.m"; sourceTree = "<group>"; };
+		D14D58501980048500FC1357 /* NSURL+SPDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SPDescription.h"; sourceTree = "<group>"; };
+		D14D58511980048500FC1357 /* NSURL+SPDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SPDescription.m"; sourceTree = "<group>"; };
+		D14D58521980048500FC1357 /* NSURL+SPParametersParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SPParametersParsing.h"; sourceTree = "<group>"; };
+		D14D58531980048500FC1357 /* NSURL+SPParametersParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SPParametersParsing.m"; sourceTree = "<group>"; };
+		D14D58551980048500FC1357 /* SPCloseX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SPCloseX.png; sourceTree = "<group>"; };
+		D14D58561980048500FC1357 /* SP_SDK_versions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_SDK_versions.h; sourceTree = "<group>"; };
+		D14D58571980048500FC1357 /* SP_URL_scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_URL_scheme.h; sourceTree = "<group>"; };
+		D14D58581980048500FC1357 /* SPActionIdValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPActionIdValidator.h; sourceTree = "<group>"; };
+		D14D58591980048500FC1357 /* SPActionIdValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPActionIdValidator.m; sourceTree = "<group>"; };
+		D14D585A1980048500FC1357 /* SPAdvertisementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdvertisementViewController.h; sourceTree = "<group>"; };
+		D14D585B1980048500FC1357 /* SPAdvertisementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAdvertisementViewController.m; sourceTree = "<group>"; };
+		D14D585C1980048500FC1357 /* SPAdvertisementViewController_SDKPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdvertisementViewController_SDKPrivate.h; sourceTree = "<group>"; };
+		D14D585D1980048500FC1357 /* SPAdvertisementViewControllerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdvertisementViewControllerSubclass.h; sourceTree = "<group>"; };
+		D14D585E1980048500FC1357 /* SPAdvertiserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdvertiserManager.h; sourceTree = "<group>"; };
+		D14D585F1980048500FC1357 /* SPAdvertiserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAdvertiserManager.m; sourceTree = "<group>"; };
+		D14D58601980048500FC1357 /* SPAppIdValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppIdValidator.h; sourceTree = "<group>"; };
+		D14D58611980048500FC1357 /* SPAppIdValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppIdValidator.m; sourceTree = "<group>"; };
+		D14D58621980048500FC1357 /* SPAppleAdvertiserIDProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppleAdvertiserIDProvider.h; sourceTree = "<group>"; };
+		D14D58631980048500FC1357 /* SPAppleAdvertiserIDProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppleAdvertiserIDProvider.m; sourceTree = "<group>"; };
+		D14D58641980048500FC1357 /* SPBaseNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseNetwork.h; sourceTree = "<group>"; };
+		D14D58651980048500FC1357 /* SPBaseNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseNetwork.m; sourceTree = "<group>"; };
+		D14D58661980048500FC1357 /* SPBrandEngageClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrandEngageClient.h; sourceTree = "<group>"; };
+		D14D58671980048500FC1357 /* SPBrandEngageClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBrandEngageClient.m; sourceTree = "<group>"; };
+		D14D58681980048500FC1357 /* SPBrandEngageClient_SDKPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrandEngageClient_SDKPrivate.h; sourceTree = "<group>"; };
+		D14D58691980048500FC1357 /* SPBrandEngageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrandEngageViewController.h; sourceTree = "<group>"; };
+		D14D586A1980048500FC1357 /* SPBrandEngageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBrandEngageViewController.m; sourceTree = "<group>"; };
+		D14D586B1980048500FC1357 /* SPBrandEngageWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrandEngageWebView.h; sourceTree = "<group>"; };
+		D14D586C1980048500FC1357 /* SPBrandEngageWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBrandEngageWebView.m; sourceTree = "<group>"; };
+		D14D586D1980048500FC1357 /* SPBufferedLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBufferedLogger.h; sourceTree = "<group>"; };
+		D14D586E1980048500FC1357 /* SPBufferedLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBufferedLogger.m; sourceTree = "<group>"; };
+		D14D586F1980048500FC1357 /* SPCallbackSendingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCallbackSendingOperation.h; sourceTree = "<group>"; };
+		D14D58701980048500FC1357 /* SPCallbackSendingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCallbackSendingOperation.m; sourceTree = "<group>"; };
+		D14D58711980048500FC1357 /* SPCloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCloseButton.h; sourceTree = "<group>"; };
+		D14D58721980048500FC1357 /* SPCloseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCloseButton.m; sourceTree = "<group>"; };
+		D14D58731980048500FC1357 /* SPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPConstants.h; sourceTree = "<group>"; };
+		D14D58741980048500FC1357 /* SPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPConstants.m; sourceTree = "<group>"; };
+		D14D58751980048500FC1357 /* SPCountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCountdownView.h; sourceTree = "<group>"; };
+		D14D58761980048500FC1357 /* SPCountdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCountdownView.m; sourceTree = "<group>"; };
+		D14D58771980048500FC1357 /* SPCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCredentials.h; sourceTree = "<group>"; };
+		D14D58781980048500FC1357 /* SPCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCredentials.m; sourceTree = "<group>"; };
+		D14D58791980048500FC1357 /* SPCredentialsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCredentialsManager.h; sourceTree = "<group>"; };
+		D14D587A1980048500FC1357 /* SPCredentialsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCredentialsManager.m; sourceTree = "<group>"; };
+		D14D587B1980048500FC1357 /* SPHostAppBundleParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHostAppBundleParametersProvider.h; sourceTree = "<group>"; };
+		D14D587C1980048500FC1357 /* SPHostAppBundleParametersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHostAppBundleParametersProvider.m; sourceTree = "<group>"; };
+		D14D58811980048500FC1357 /* SPInterstitialClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialClient.h; sourceTree = "<group>"; };
+		D14D58821980048500FC1357 /* SPInterstitialClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialClient.m; sourceTree = "<group>"; };
+		D14D58831980048500FC1357 /* SPInterstitialClient_SDKPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialClient_SDKPrivate.h; sourceTree = "<group>"; };
+		D14D58841980048500FC1357 /* SPInterstitialEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialEvent.h; sourceTree = "<group>"; };
+		D14D58851980048500FC1357 /* SPInterstitialEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialEvent.m; sourceTree = "<group>"; };
+		D14D58861980048500FC1357 /* SPInterstitialEventHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialEventHub.h; sourceTree = "<group>"; };
+		D14D58871980048500FC1357 /* SPInterstitialEventHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialEventHub.m; sourceTree = "<group>"; };
+		D14D58881980048500FC1357 /* SPInterstitialNetworkAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialNetworkAdapter.h; sourceTree = "<group>"; };
+		D14D58891980048500FC1357 /* SPInterstitialOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialOffer.h; sourceTree = "<group>"; };
+		D14D588A1980048500FC1357 /* SPInterstitialOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialOffer.m; sourceTree = "<group>"; };
+		D14D588B1980048500FC1357 /* SPInterstitialResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialResponse.h; sourceTree = "<group>"; };
+		D14D588C1980048500FC1357 /* SPInterstitialResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialResponse.m; sourceTree = "<group>"; };
+		D14D588D1980048500FC1357 /* SPJailbreakStatusProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPJailbreakStatusProvider.h; sourceTree = "<group>"; };
+		D14D588E1980048500FC1357 /* SPJailbreakStatusProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPJailbreakStatusProvider.m; sourceTree = "<group>"; };
+		D14D588F1980048500FC1357 /* SPLoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoadingIndicator.h; sourceTree = "<group>"; };
+		D14D58901980048500FC1357 /* SPLoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoadingIndicator.m; sourceTree = "<group>"; };
+		D14D58911980048500FC1357 /* SPLocaleParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLocaleParametersProvider.h; sourceTree = "<group>"; };
+		D14D58921980048500FC1357 /* SPLocaleParametersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLocaleParametersProvider.m; sourceTree = "<group>"; };
+		D14D58931980048500FC1357 /* SPLogAppender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLogAppender.h; sourceTree = "<group>"; };
+		D14D58941980048500FC1357 /* SPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLogger.h; sourceTree = "<group>"; };
+		D14D58951980048500FC1357 /* SPLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLogger.m; sourceTree = "<group>"; };
+		D14D58961980048500FC1357 /* SPMacAddressProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMacAddressProvider.h; sourceTree = "<group>"; };
+		D14D58971980048500FC1357 /* SPMacAddressProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMacAddressProvider.m; sourceTree = "<group>"; };
+		D14D58981980048500FC1357 /* SPMD5MacAddressProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMD5MacAddressProvider.h; sourceTree = "<group>"; };
+		D14D58991980048500FC1357 /* SPMD5MacAddressProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMD5MacAddressProvider.m; sourceTree = "<group>"; };
+		D14D589A1980048500FC1357 /* SPMediationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMediationCoordinator.h; sourceTree = "<group>"; };
+		D14D589B1980048500FC1357 /* SPMediationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMediationCoordinator.m; sourceTree = "<group>"; };
+		D14D589C1980048500FC1357 /* SPMicroBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMicroBrowserViewController.h; sourceTree = "<group>"; };
+		D14D589D1980048500FC1357 /* SPMicroBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMicroBrowserViewController.m; sourceTree = "<group>"; };
+		D14D589E1980048500FC1357 /* SPNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNetworkOperation.h; sourceTree = "<group>"; };
+		D14D589F1980048500FC1357 /* SPNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNetworkOperation.m; sourceTree = "<group>"; };
+		D14D58A01980048500FC1357 /* SPNetworkParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNetworkParametersProvider.h; sourceTree = "<group>"; };
+		D14D58A11980048500FC1357 /* SPNetworkParametersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNetworkParametersProvider.m; sourceTree = "<group>"; };
+		D14D58A21980048500FC1357 /* SPOfferWallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOfferWallViewController.h; sourceTree = "<group>"; };
+		D14D58A31980048500FC1357 /* SPOfferWallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOfferWallViewController.m; sourceTree = "<group>"; };
+		D14D58A41980048500FC1357 /* SponsorPaySDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SponsorPaySDK.h; sourceTree = "<group>"; };
+		D14D58A51980048500FC1357 /* SponsorPaySDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SponsorPaySDK.m; sourceTree = "<group>"; };
+		D14D58A61980048500FC1357 /* SPPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPersistence.h; sourceTree = "<group>"; };
+		D14D58A71980048500FC1357 /* SPPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPersistence.m; sourceTree = "<group>"; };
+		D14D58A81980048500FC1357 /* SPRandomID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRandomID.h; sourceTree = "<group>"; };
+		D14D58A91980048500FC1357 /* SPRandomID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRandomID.m; sourceTree = "<group>"; };
+		D14D58AA1980048500FC1357 /* SPReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPReachability.h; sourceTree = "<group>"; };
+		D14D58AB1980048500FC1357 /* SPReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPReachability.m; sourceTree = "<group>"; };
+		D14D58AC1980048500FC1357 /* SPResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPResourceLoader.h; sourceTree = "<group>"; };
+		D14D58AD1980048500FC1357 /* SPResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPResourceLoader.m; sourceTree = "<group>"; };
+		D14D58AE1980048500FC1357 /* SPRewardedVideoNetworkAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRewardedVideoNetworkAdapter.h; sourceTree = "<group>"; };
+		D14D58AF1980048500FC1357 /* SPSchemeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSchemeParser.h; sourceTree = "<group>"; };
+		D14D58B01980048500FC1357 /* SPSchemeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSchemeParser.m; sourceTree = "<group>"; };
+		D14D58B11980048500FC1357 /* SPScreenMetricsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPScreenMetricsProvider.h; sourceTree = "<group>"; };
+		D14D58B21980048500FC1357 /* SPScreenMetricsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPScreenMetricsProvider.m; sourceTree = "<group>"; };
+		D14D58B31980048500FC1357 /* SPSDKFeaturesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSDKFeaturesProvider.h; sourceTree = "<group>"; };
+		D14D58B41980048500FC1357 /* SPSDKFeaturesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSDKFeaturesProvider.m; sourceTree = "<group>"; };
+		D14D58B51980048500FC1357 /* SPSDKVersionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSDKVersionProvider.h; sourceTree = "<group>"; };
+		D14D58B61980048500FC1357 /* SPSDKVersionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSDKVersionProvider.m; sourceTree = "<group>"; };
+		D14D58B71980048500FC1357 /* SPSemanticVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSemanticVersion.h; sourceTree = "<group>"; };
+		D14D58B81980048500FC1357 /* SPSemanticVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSemanticVersion.m; sourceTree = "<group>"; };
+		D14D58B91980048500FC1357 /* SPSHA1MacAddressProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSHA1MacAddressProvider.h; sourceTree = "<group>"; };
+		D14D58BA1980048500FC1357 /* SPSHA1MacAddressProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSHA1MacAddressProvider.m; sourceTree = "<group>"; };
+		D14D58BB1980048500FC1357 /* SPSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSignature.h; sourceTree = "<group>"; };
+		D14D58BC1980048500FC1357 /* SPSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSignature.m; sourceTree = "<group>"; };
+		D14D58BD1980048500FC1357 /* SPSystemLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSystemLogger.h; sourceTree = "<group>"; };
+		D14D58BE1980048500FC1357 /* SPSystemLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSystemLogger.m; sourceTree = "<group>"; };
+		D14D58BF1980048500FC1357 /* SPSystemParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSystemParametersProvider.h; sourceTree = "<group>"; };
+		D14D58C01980048500FC1357 /* SPSystemParametersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSystemParametersProvider.m; sourceTree = "<group>"; };
+		D14D58C11980048500FC1357 /* SPSystemVersionChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSystemVersionChecker.h; sourceTree = "<group>"; };
+		D14D58C21980048500FC1357 /* SPSystemVersionChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSystemVersionChecker.m; sourceTree = "<group>"; };
+		D14D58C31980048500FC1357 /* SPTargetedNotificationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTargetedNotificationFilter.h; sourceTree = "<group>"; };
+		D14D58C41980048500FC1357 /* SPTargetedNotificationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTargetedNotificationFilter.m; sourceTree = "<group>"; };
+		D14D58C51980048500FC1357 /* SPToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPToast.h; sourceTree = "<group>"; };
+		D14D58C61980048500FC1357 /* SPToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPToast.m; sourceTree = "<group>"; };
+		D14D58C71980048500FC1357 /* SPTPNGenericAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTPNGenericAdapter.h; sourceTree = "<group>"; };
+		D14D58C81980048500FC1357 /* SPTPNGenericAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTPNGenericAdapter.m; sourceTree = "<group>"; };
+		D14D58C91980048500FC1357 /* SPTPNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTPNManager.h; sourceTree = "<group>"; };
+		D14D58CA1980048500FC1357 /* SPTPNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTPNManager.m; sourceTree = "<group>"; };
+		D14D58CB1980048500FC1357 /* SPTPNMediationTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTPNMediationTypes.h; sourceTree = "<group>"; };
+		D14D58CC1980048500FC1357 /* SPTPNMediationTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTPNMediationTypes.m; sourceTree = "<group>"; };
+		D14D58CD1980048500FC1357 /* SPTPNVideoAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTPNVideoAdapter.h; sourceTree = "<group>"; };
+		D14D58CE1980048500FC1357 /* SPURLGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPURLGenerator.h; sourceTree = "<group>"; };
+		D14D58CF1980048500FC1357 /* SPURLGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPURLGenerator.m; sourceTree = "<group>"; };
+		D14D58D01980048500FC1357 /* SPUrlParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUrlParametersProvider.h; sourceTree = "<group>"; };
+		D14D58D11980048500FC1357 /* SPVideoPlayerStateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerStateDelegate.h; sourceTree = "<group>"; };
+		D14D58D21980048500FC1357 /* SPVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerViewController.h; sourceTree = "<group>"; };
+		D14D58D31980048500FC1357 /* SPVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoPlayerViewController.m; sourceTree = "<group>"; };
+		D14D58D41980048500FC1357 /* SPVirtualCurrencyServerConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVirtualCurrencyServerConnector.h; sourceTree = "<group>"; };
+		D14D58D51980048500FC1357 /* SPVirtualCurrencyServerConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVirtualCurrencyServerConnector.m; sourceTree = "<group>"; };
+		D14D58D61980048500FC1357 /* SPVirtualCurrencyServerConnector_SDKPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVirtualCurrencyServerConnector_SDKPrivate.h; sourceTree = "<group>"; };
+		D14D5916198005EA00FC1357 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D14D5918198005F300FC1357 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D14D591A198005FD00FC1357 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D14D591C1980060600FC1357 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D14D591E1980061000FC1357 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D14D59201980062700FC1357 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +273,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14D59211980062700FC1357 /* AdSupport.framework in Frameworks */,
+				D14D591F1980061000FC1357 /* StoreKit.framework in Frameworks */,
+				D14D591D1980060600FC1357 /* CoreTelephony.framework in Frameworks */,
+				D14D591B198005FD00FC1357 /* SystemConfiguration.framework in Frameworks */,
+				D14D5919198005F300FC1357 /* MediaPlayer.framework in Frameworks */,
+				D14D5917198005EA00FC1357 /* QuartzCore.framework in Frameworks */,
 				D14D5812197FB5DC00FC1357 /* CoreGraphics.framework in Frameworks */,
 				D14D5814197FB5DC00FC1357 /* UIKit.framework in Frameworks */,
 				D14D5810197FB5DC00FC1357 /* Foundation.framework in Frameworks */,
@@ -89,6 +303,7 @@
 			children = (
 				D14D5815197FB5DC00FC1357 /* SDK Integration Test */,
 				D14D5834197FB5DD00FC1357 /* SDK Integration TestTests */,
+				D14D584A1980048500FC1357 /* sponsorpay-sdk */,
 				D14D580E197FB5DC00FC1357 /* Frameworks */,
 				D14D580D197FB5DC00FC1357 /* Products */,
 			);
@@ -106,6 +321,12 @@
 		D14D580E197FB5DC00FC1357 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D14D59201980062700FC1357 /* AdSupport.framework */,
+				D14D591E1980061000FC1357 /* StoreKit.framework */,
+				D14D591C1980060600FC1357 /* CoreTelephony.framework */,
+				D14D591A198005FD00FC1357 /* SystemConfiguration.framework */,
+				D14D5918198005F300FC1357 /* MediaPlayer.framework */,
+				D14D5916198005EA00FC1357 /* QuartzCore.framework */,
 				D14D580F197FB5DC00FC1357 /* Foundation.framework */,
 				D14D5811197FB5DC00FC1357 /* CoreGraphics.framework */,
 				D14D5813197FB5DC00FC1357 /* UIKit.framework */,
@@ -166,6 +387,156 @@
 			children = (
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		D14D584A1980048500FC1357 /* sponsorpay-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				D14D584B1980048500FC1357 /* LoadableCategory.h */,
+				D14D584C1980048500FC1357 /* NSDictionary+SPSerialization.h */,
+				D14D584D1980048500FC1357 /* NSDictionary+SPSerialization.m */,
+				D14D584E1980048500FC1357 /* NSString+SPURLEncoding.h */,
+				D14D584F1980048500FC1357 /* NSString+SPURLEncoding.m */,
+				D14D58501980048500FC1357 /* NSURL+SPDescription.h */,
+				D14D58511980048500FC1357 /* NSURL+SPDescription.m */,
+				D14D58521980048500FC1357 /* NSURL+SPParametersParsing.h */,
+				D14D58531980048500FC1357 /* NSURL+SPParametersParsing.m */,
+				D14D58541980048500FC1357 /* Resources */,
+				D14D58561980048500FC1357 /* SP_SDK_versions.h */,
+				D14D58571980048500FC1357 /* SP_URL_scheme.h */,
+				D14D58581980048500FC1357 /* SPActionIdValidator.h */,
+				D14D58591980048500FC1357 /* SPActionIdValidator.m */,
+				D14D585A1980048500FC1357 /* SPAdvertisementViewController.h */,
+				D14D585B1980048500FC1357 /* SPAdvertisementViewController.m */,
+				D14D585C1980048500FC1357 /* SPAdvertisementViewController_SDKPrivate.h */,
+				D14D585D1980048500FC1357 /* SPAdvertisementViewControllerSubclass.h */,
+				D14D585E1980048500FC1357 /* SPAdvertiserManager.h */,
+				D14D585F1980048500FC1357 /* SPAdvertiserManager.m */,
+				D14D58601980048500FC1357 /* SPAppIdValidator.h */,
+				D14D58611980048500FC1357 /* SPAppIdValidator.m */,
+				D14D58621980048500FC1357 /* SPAppleAdvertiserIDProvider.h */,
+				D14D58631980048500FC1357 /* SPAppleAdvertiserIDProvider.m */,
+				D14D58641980048500FC1357 /* SPBaseNetwork.h */,
+				D14D58651980048500FC1357 /* SPBaseNetwork.m */,
+				D14D58661980048500FC1357 /* SPBrandEngageClient.h */,
+				D14D58671980048500FC1357 /* SPBrandEngageClient.m */,
+				D14D58681980048500FC1357 /* SPBrandEngageClient_SDKPrivate.h */,
+				D14D58691980048500FC1357 /* SPBrandEngageViewController.h */,
+				D14D586A1980048500FC1357 /* SPBrandEngageViewController.m */,
+				D14D586B1980048500FC1357 /* SPBrandEngageWebView.h */,
+				D14D586C1980048500FC1357 /* SPBrandEngageWebView.m */,
+				D14D586D1980048500FC1357 /* SPBufferedLogger.h */,
+				D14D586E1980048500FC1357 /* SPBufferedLogger.m */,
+				D14D586F1980048500FC1357 /* SPCallbackSendingOperation.h */,
+				D14D58701980048500FC1357 /* SPCallbackSendingOperation.m */,
+				D14D58711980048500FC1357 /* SPCloseButton.h */,
+				D14D58721980048500FC1357 /* SPCloseButton.m */,
+				D14D58731980048500FC1357 /* SPConstants.h */,
+				D14D58741980048500FC1357 /* SPConstants.m */,
+				D14D58751980048500FC1357 /* SPCountdownView.h */,
+				D14D58761980048500FC1357 /* SPCountdownView.m */,
+				D14D58771980048500FC1357 /* SPCredentials.h */,
+				D14D58781980048500FC1357 /* SPCredentials.m */,
+				D14D58791980048500FC1357 /* SPCredentialsManager.h */,
+				D14D587A1980048500FC1357 /* SPCredentialsManager.m */,
+				D14D587B1980048500FC1357 /* SPHostAppBundleParametersProvider.h */,
+				D14D587C1980048500FC1357 /* SPHostAppBundleParametersProvider.m */,
+				D14D58811980048500FC1357 /* SPInterstitialClient.h */,
+				D14D58821980048500FC1357 /* SPInterstitialClient.m */,
+				D14D58831980048500FC1357 /* SPInterstitialClient_SDKPrivate.h */,
+				D14D58841980048500FC1357 /* SPInterstitialEvent.h */,
+				D14D58851980048500FC1357 /* SPInterstitialEvent.m */,
+				D14D58861980048500FC1357 /* SPInterstitialEventHub.h */,
+				D14D58871980048500FC1357 /* SPInterstitialEventHub.m */,
+				D14D58881980048500FC1357 /* SPInterstitialNetworkAdapter.h */,
+				D14D58891980048500FC1357 /* SPInterstitialOffer.h */,
+				D14D588A1980048500FC1357 /* SPInterstitialOffer.m */,
+				D14D588B1980048500FC1357 /* SPInterstitialResponse.h */,
+				D14D588C1980048500FC1357 /* SPInterstitialResponse.m */,
+				D14D588D1980048500FC1357 /* SPJailbreakStatusProvider.h */,
+				D14D588E1980048500FC1357 /* SPJailbreakStatusProvider.m */,
+				D14D588F1980048500FC1357 /* SPLoadingIndicator.h */,
+				D14D58901980048500FC1357 /* SPLoadingIndicator.m */,
+				D14D58911980048500FC1357 /* SPLocaleParametersProvider.h */,
+				D14D58921980048500FC1357 /* SPLocaleParametersProvider.m */,
+				D14D58931980048500FC1357 /* SPLogAppender.h */,
+				D14D58941980048500FC1357 /* SPLogger.h */,
+				D14D58951980048500FC1357 /* SPLogger.m */,
+				D14D58961980048500FC1357 /* SPMacAddressProvider.h */,
+				D14D58971980048500FC1357 /* SPMacAddressProvider.m */,
+				D14D58981980048500FC1357 /* SPMD5MacAddressProvider.h */,
+				D14D58991980048500FC1357 /* SPMD5MacAddressProvider.m */,
+				D14D589A1980048500FC1357 /* SPMediationCoordinator.h */,
+				D14D589B1980048500FC1357 /* SPMediationCoordinator.m */,
+				D14D589C1980048500FC1357 /* SPMicroBrowserViewController.h */,
+				D14D589D1980048500FC1357 /* SPMicroBrowserViewController.m */,
+				D14D589E1980048500FC1357 /* SPNetworkOperation.h */,
+				D14D589F1980048500FC1357 /* SPNetworkOperation.m */,
+				D14D58A01980048500FC1357 /* SPNetworkParametersProvider.h */,
+				D14D58A11980048500FC1357 /* SPNetworkParametersProvider.m */,
+				D14D58A21980048500FC1357 /* SPOfferWallViewController.h */,
+				D14D58A31980048500FC1357 /* SPOfferWallViewController.m */,
+				D14D58A41980048500FC1357 /* SponsorPaySDK.h */,
+				D14D58A51980048500FC1357 /* SponsorPaySDK.m */,
+				D14D58A61980048500FC1357 /* SPPersistence.h */,
+				D14D58A71980048500FC1357 /* SPPersistence.m */,
+				D14D58A81980048500FC1357 /* SPRandomID.h */,
+				D14D58A91980048500FC1357 /* SPRandomID.m */,
+				D14D58AA1980048500FC1357 /* SPReachability.h */,
+				D14D58AB1980048500FC1357 /* SPReachability.m */,
+				D14D58AC1980048500FC1357 /* SPResourceLoader.h */,
+				D14D58AD1980048500FC1357 /* SPResourceLoader.m */,
+				D14D58AE1980048500FC1357 /* SPRewardedVideoNetworkAdapter.h */,
+				D14D58AF1980048500FC1357 /* SPSchemeParser.h */,
+				D14D58B01980048500FC1357 /* SPSchemeParser.m */,
+				D14D58B11980048500FC1357 /* SPScreenMetricsProvider.h */,
+				D14D58B21980048500FC1357 /* SPScreenMetricsProvider.m */,
+				D14D58B31980048500FC1357 /* SPSDKFeaturesProvider.h */,
+				D14D58B41980048500FC1357 /* SPSDKFeaturesProvider.m */,
+				D14D58B51980048500FC1357 /* SPSDKVersionProvider.h */,
+				D14D58B61980048500FC1357 /* SPSDKVersionProvider.m */,
+				D14D58B71980048500FC1357 /* SPSemanticVersion.h */,
+				D14D58B81980048500FC1357 /* SPSemanticVersion.m */,
+				D14D58B91980048500FC1357 /* SPSHA1MacAddressProvider.h */,
+				D14D58BA1980048500FC1357 /* SPSHA1MacAddressProvider.m */,
+				D14D58BB1980048500FC1357 /* SPSignature.h */,
+				D14D58BC1980048500FC1357 /* SPSignature.m */,
+				D14D58BD1980048500FC1357 /* SPSystemLogger.h */,
+				D14D58BE1980048500FC1357 /* SPSystemLogger.m */,
+				D14D58BF1980048500FC1357 /* SPSystemParametersProvider.h */,
+				D14D58C01980048500FC1357 /* SPSystemParametersProvider.m */,
+				D14D58C11980048500FC1357 /* SPSystemVersionChecker.h */,
+				D14D58C21980048500FC1357 /* SPSystemVersionChecker.m */,
+				D14D58C31980048500FC1357 /* SPTargetedNotificationFilter.h */,
+				D14D58C41980048500FC1357 /* SPTargetedNotificationFilter.m */,
+				D14D58C51980048500FC1357 /* SPToast.h */,
+				D14D58C61980048500FC1357 /* SPToast.m */,
+				D14D58C71980048500FC1357 /* SPTPNGenericAdapter.h */,
+				D14D58C81980048500FC1357 /* SPTPNGenericAdapter.m */,
+				D14D58C91980048500FC1357 /* SPTPNManager.h */,
+				D14D58CA1980048500FC1357 /* SPTPNManager.m */,
+				D14D58CB1980048500FC1357 /* SPTPNMediationTypes.h */,
+				D14D58CC1980048500FC1357 /* SPTPNMediationTypes.m */,
+				D14D58CD1980048500FC1357 /* SPTPNVideoAdapter.h */,
+				D14D58CE1980048500FC1357 /* SPURLGenerator.h */,
+				D14D58CF1980048500FC1357 /* SPURLGenerator.m */,
+				D14D58D01980048500FC1357 /* SPUrlParametersProvider.h */,
+				D14D58D11980048500FC1357 /* SPVideoPlayerStateDelegate.h */,
+				D14D58D21980048500FC1357 /* SPVideoPlayerViewController.h */,
+				D14D58D31980048500FC1357 /* SPVideoPlayerViewController.m */,
+				D14D58D41980048500FC1357 /* SPVirtualCurrencyServerConnector.h */,
+				D14D58D51980048500FC1357 /* SPVirtualCurrencyServerConnector.m */,
+				D14D58D61980048500FC1357 /* SPVirtualCurrencyServerConnector_SDKPrivate.h */,
+			);
+			path = "sponsorpay-sdk";
+			sourceTree = "<group>";
+		};
+		D14D58541980048500FC1357 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D14D58551980048500FC1357 /* SPCloseX.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +617,7 @@
 			files = (
 				D14D5828197FB5DD00FC1357 /* Images.xcassets in Resources */,
 				D14D581A197FB5DD00FC1357 /* InfoPlist.strings in Resources */,
+				D14D58DB1980048500FC1357 /* SPCloseX.png in Resources */,
 				D14D5823197FB5DD00FC1357 /* Main.storyboard in Resources */,
 				D14D5849197FE9CA00FC1357 /* MainViewController.xib in Resources */,
 			);
@@ -266,10 +638,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14D59151980048500FC1357 /* SPVirtualCurrencyServerConnector.m in Sources */,
+				D14D58E61980048500FC1357 /* SPCallbackSendingOperation.m in Sources */,
+				D14D59041980048500FC1357 /* SPSchemeParser.m in Sources */,
+				D14D59101980048500FC1357 /* SPTPNGenericAdapter.m in Sources */,
+				D14D58F91980048500FC1357 /* SPMD5MacAddressProvider.m in Sources */,
+				D14D58F31980048500FC1357 /* SPInterstitialResponse.m in Sources */,
+				D14D58F01980048500FC1357 /* SPInterstitialEvent.m in Sources */,
+				D14D58EA1980048500FC1357 /* SPCredentials.m in Sources */,
+				D14D590F1980048500FC1357 /* SPToast.m in Sources */,
+				D14D58F71980048500FC1357 /* SPLogger.m in Sources */,
+				D14D58DE1980048500FC1357 /* SPAdvertiserManager.m in Sources */,
+				D14D58FC1980048500FC1357 /* SPNetworkOperation.m in Sources */,
+				D14D59061980048500FC1357 /* SPSDKFeaturesProvider.m in Sources */,
+				D14D58E81980048500FC1357 /* SPConstants.m in Sources */,
+				D14D590B1980048500FC1357 /* SPSystemLogger.m in Sources */,
+				D14D58DA1980048500FC1357 /* NSURL+SPParametersParsing.m in Sources */,
+				D14D58FF1980048500FC1357 /* SponsorPaySDK.m in Sources */,
+				D14D58FB1980048500FC1357 /* SPMicroBrowserViewController.m in Sources */,
 				D14D5826197FB5DD00FC1357 /* ViewController.m in Sources */,
 				D14D5820197FB5DD00FC1357 /* AppDelegate.m in Sources */,
+				D14D58FA1980048500FC1357 /* SPMediationCoordinator.m in Sources */,
+				D14D58EF1980048500FC1357 /* SPInterstitialClient.m in Sources */,
+				D14D58DF1980048500FC1357 /* SPAppIdValidator.m in Sources */,
+				D14D59121980048500FC1357 /* SPTPNMediationTypes.m in Sources */,
+				D14D590D1980048500FC1357 /* SPSystemVersionChecker.m in Sources */,
+				D14D58E91980048500FC1357 /* SPCountdownView.m in Sources */,
+				D14D58F21980048500FC1357 /* SPInterstitialOffer.m in Sources */,
+				D14D58F61980048500FC1357 /* SPLocaleParametersProvider.m in Sources */,
+				D14D58F51980048500FC1357 /* SPLoadingIndicator.m in Sources */,
+				D14D58F41980048500FC1357 /* SPJailbreakStatusProvider.m in Sources */,
+				D14D58D71980048500FC1357 /* NSDictionary+SPSerialization.m in Sources */,
+				D14D58E11980048500FC1357 /* SPBaseNetwork.m in Sources */,
+				D14D590C1980048500FC1357 /* SPSystemParametersProvider.m in Sources */,
 				D14D581C197FB5DD00FC1357 /* main.m in Sources */,
+				D14D59021980048500FC1357 /* SPReachability.m in Sources */,
+				D14D58E31980048500FC1357 /* SPBrandEngageViewController.m in Sources */,
+				D14D58EB1980048500FC1357 /* SPCredentialsManager.m in Sources */,
+				D14D59051980048500FC1357 /* SPScreenMetricsProvider.m in Sources */,
+				D14D59071980048500FC1357 /* SPSDKVersionProvider.m in Sources */,
+				D14D590E1980048500FC1357 /* SPTargetedNotificationFilter.m in Sources */,
+				D14D58FD1980048500FC1357 /* SPNetworkParametersProvider.m in Sources */,
+				D14D59131980048500FC1357 /* SPURLGenerator.m in Sources */,
+				D14D58E21980048500FC1357 /* SPBrandEngageClient.m in Sources */,
+				D14D58DD1980048500FC1357 /* SPAdvertisementViewController.m in Sources */,
+				D14D59031980048500FC1357 /* SPResourceLoader.m in Sources */,
+				D14D58E51980048500FC1357 /* SPBufferedLogger.m in Sources */,
+				D14D58F81980048500FC1357 /* SPMacAddressProvider.m in Sources */,
+				D14D58D91980048500FC1357 /* NSURL+SPDescription.m in Sources */,
+				D14D58E01980048500FC1357 /* SPAppleAdvertiserIDProvider.m in Sources */,
+				D14D59011980048500FC1357 /* SPRandomID.m in Sources */,
+				D14D59091980048500FC1357 /* SPSHA1MacAddressProvider.m in Sources */,
+				D14D58F11980048500FC1357 /* SPInterstitialEventHub.m in Sources */,
+				D14D58E71980048500FC1357 /* SPCloseButton.m in Sources */,
+				D14D59001980048500FC1357 /* SPPersistence.m in Sources */,
 				D14D5848197FE9CA00FC1357 /* MainViewController.m in Sources */,
+				D14D58FE1980048500FC1357 /* SPOfferWallViewController.m in Sources */,
+				D14D58E41980048500FC1357 /* SPBrandEngageWebView.m in Sources */,
+				D14D59141980048500FC1357 /* SPVideoPlayerViewController.m in Sources */,
+				D14D590A1980048500FC1357 /* SPSignature.m in Sources */,
+				D14D58EC1980048500FC1357 /* SPHostAppBundleParametersProvider.m in Sources */,
+				D14D59111980048500FC1357 /* SPTPNManager.m in Sources */,
+				D14D59081980048500FC1357 /* SPSemanticVersion.m in Sources */,
+				D14D58DC1980048500FC1357 /* SPActionIdValidator.m in Sources */,
+				D14D58D81980048500FC1357 /* NSString+SPURLEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "SponsorPaySDK.h"
 
-@interface MainViewController : ViewController
+@interface MainViewController : ViewController <SPVirtualCurrencyConnectionDelegate>
 
 @end
