@@ -25,9 +25,13 @@ public class MainActivity extends ActionBarActivity implements SPBrandEngageRequ
 	
 	private static final String TAG = "A_SDK_TEST";
 	
-	private static final String APP_ID = "23528";
 	private static final String USER_ID = null; // the current user id of your game (or null if you don't use any)
+	
+	private static final String APP_ID = "23528";
 	private static final String SECURITY_TOKEN = "92e8c4c4f63c117a1e3279d9c62bf551";
+	
+//	private static final String APP_ID = "23762";
+//	private static final String SECURITY_TOKEN = "c97597d3702a0a85ddd0d997aacf0b16";
 	
 	private SPCurrencyServerListener mVCSListener;
 	private Intent _RVOfferIntent;

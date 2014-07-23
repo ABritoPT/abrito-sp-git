@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0DC0D614-AA7F-42C1-83D4-6AAEE30D1FD2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SDK Integration Test</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0372F146-D925-4D98-B581-CC48C7432157</key>
+		<string>https://github.com/ABritoPT/abrito-sp-git.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/SDK integration test/SDK Integration Test/SDK Integration Test.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0372F146-D925-4D98-B581-CC48C7432157</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ABritoPT/abrito-sp-git.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0372F146-D925-4D98-B581-CC48C7432157</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0372F146-D925-4D98-B581-CC48C7432157</string>
+			<key>IDESourceControlWCCName</key>
+			<string>abrito-sp-git</string>
+		</dict>
+	</array>
+</dict>
+</plist>
