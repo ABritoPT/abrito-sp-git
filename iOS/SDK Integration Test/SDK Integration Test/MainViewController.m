@@ -46,10 +46,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+// OW
 - (IBAction)showOW:(id)sender {
-    
+    [SponsorPaySDK showOfferWallWithParentViewController:self];
 }
 
+- (void) offerWallViewController:(SPOfferWallViewController *)offerWallVC isFinishedWithStatus:(int)status {
+    
+    // we could know if status determines a network error by comparing it with the
+    // SPONSORPAY_ERR_NETWORK constant defined in SPOfferWallViewController.h
+}
+
+// Rewarded Video
 - (IBAction)checkBE {
     self.showBEButton.enabled = !self.showBEButton.enabled;
 }
@@ -58,6 +66,7 @@
     self.showBEButton.enabled = NO;
 }
 
+// Interstitials
 - (IBAction)checkInterstitial {
     self.showInterstitialButton.enabled = !self.showInterstitialButton.enabled;
 }
