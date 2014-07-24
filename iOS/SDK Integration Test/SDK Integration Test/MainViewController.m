@@ -19,15 +19,20 @@
 @property (weak, nonatomic) IBOutlet UIButton *checkInterstitialButton;
 @property (weak, nonatomic) IBOutlet UIButton *showInterstitialButton;
 
+@property (strong, nonatomic) SPBrandEngageClient *brandEngageClient;
+
 @end
 
 @implementation MainViewController
+
+double coins;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        coins = 0;
     }
     return self;
 }
@@ -38,6 +43,7 @@
     // Do any additional setup after loading the view from its nib.
     self.showBEButton.enabled = NO;
     self.showInterstitialButton.enabled = NO;
+    [self refreshCreditsText];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,27 +52,40 @@
     // Dispose of any resources that can be recreated.
 }
 
-// OW
+#pragma mark - OW
 - (IBAction)showOW:(id)sender {
     [SponsorPaySDK showOfferWallWithParentViewController:self];
 }
 
+#pragma mark - SPOfferWallViewControllerDelegate
 - (void) offerWallViewController:(SPOfferWallViewController *)offerWallVC isFinishedWithStatus:(int)status {
     
     // we could know if status determines a network error by comparing it with the
     // SPONSORPAY_ERR_NETWORK constant defined in SPOfferWallViewController.h
 }
 
-// Rewarded Video
+#pragma mark - Rewarded Video
 - (IBAction)checkBE {
-    self.showBEButton.enabled = !self.showBEButton.enabled;
+    _brandEngageClient = [SponsorPaySDK requestBrandEngageOffersNotifyingDelegate:self];
 }
 
 - (IBAction)showBE {
-    self.showBEButton.enabled = NO;
+    BOOL started = [_brandEngageClient startWithParentViewController:self];
+    self.showBEButton.enabled = !started;
 }
 
-// Interstitials
+#pragma mark - SPBrandEngageClientDelegate
+- (void)brandEngageClient:(SPBrandEngageClient *)brandEngageClient
+         didReceiveOffers:(BOOL)areOffersAvailable {
+    self.showBEButton.enabled = areOffersAvailable;
+}
+
+- (void)brandEngageClient:(SPBrandEngageClient *)brandEngageClient
+          didChangeStatus:(SPBrandEngageClientStatus)newStatus {
+    
+}
+
+#pragma mark - Interstitials
 - (IBAction)checkInterstitial {
     self.showInterstitialButton.enabled = !self.showInterstitialButton.enabled;
 }
@@ -75,17 +94,22 @@
     self.showInterstitialButton.enabled = NO;
 }
 
-// VCS
-
+#pragma mark - VCS
 - (IBAction)updateCredits {
     [SponsorPaySDK requestDeltaOfCoinsNotifyingDelegate:self];
 }
 
+- (void)refreshCreditsText {
+    self.creditsText.text = [NSString stringWithFormat:@"%.2f", coins];
+}
+
+#pragma mark - SPVirtualCurrencyConnectionDelegate
 - (void)virtualCurrencyConnector:(SPVirtualCurrencyServerConnector *)vcConnector
   didReceiveDeltaOfCoinsResponse:(double)deltaOfCoins
              latestTransactionId:(NSString *)transactionId
 {
-    self.creditsText.text = [NSString stringWithFormat:@"%.2f", deltaOfCoins];
+    coins += deltaOfCoins;
+    [self refreshCreditsText];
 }
 
 - (void)virtualCurrencyConnector:(SPVirtualCurrencyServerConnector *)vcConnector
