@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="18"
+        android:minSdkVersion="15"
         android:targetSdkVersion="18" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -126,6 +126,17 @@
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>
         </receiver>
+        
+        <!-- HyprMX -->
+        <activity
+            android:name="com.sponsorpay.mediation.mbe.HyprMXVideoActivity"/>
+
+        <activity
+            android:name="com.hyprmx.android.sdk.activity.HyprMXOfferViewerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|smallestScreenSize|uiMode|fontScale|screenLayout|locale"
+            android:label="HyprMX SDK"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar" />
 </application>
 
 </manifest>

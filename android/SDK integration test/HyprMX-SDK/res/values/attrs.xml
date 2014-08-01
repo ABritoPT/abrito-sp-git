@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HyprMXButton">
+        <attr name="buttonSize">
+            <flag name="small" value="0" />
+            <flag name="large" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

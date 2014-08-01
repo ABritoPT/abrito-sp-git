@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout android:id="@+id/hyprmx___navbar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:padding="0dp">
+
+            <ImageButton android:id="@id/hyprmx___close_button"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/close" />
+
+            <TextView android:id="@+id/hyprmx___pages_left"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="1 of 20"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textIsSelectable="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/hyprmx___close_button"
+                android:paddingRight="10dp" />
+
+            <TextView android:id="@+id/hyprmx___time_left"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="10:00"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/hyprmx___pages_left"
+                android:paddingRight="10dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/hyprmx___time_left">
+                <Button android:id="@+id/hyprmx___next_finish_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/next_button"
+                    android:text="NEXT"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ProgressBar android:id="@+id/hyprmx___progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/hypr_progress_drawable"
+                android:layout_height="5dp"
+                android:layout_width="fill_parent" />
+            <WebView android:id="@+id/hyprmx___webView"
+                android:layout_below="@id/hyprmx___progressBar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/hyprmx___webViewWrapper"
+        android:layout_width="fill_parent"
+        android:background="@android:color/black"
+        android:visibility="gone"
+        android:layout_height="fill_parent" >
+
+
+    </RelativeLayout>
+</RelativeLayout>
