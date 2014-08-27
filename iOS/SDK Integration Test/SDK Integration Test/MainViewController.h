@@ -9,6 +9,6 @@
 #import "ViewController.h"
 #import "SponsorPaySDK.h"
 
-@interface MainViewController : ViewController <SPVirtualCurrencyConnectionDelegate,SPOfferWallViewControllerDelegate, SPBrandEngageClientDelegate>
+@interface MainViewController : ViewController <SPVirtualCurrencyConnectionDelegate,SPOfferWallViewControllerDelegate, SPBrandEngageClientDelegate, SPInterstitialClientDelegate>
 
 @end

@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *showInterstitialButton;
 
 @property (strong, nonatomic) SPBrandEngageClient *brandEngageClient;
+@property (strong, nonatomic) SPInterstitialClient *interstitialClient;
 
 @end
 
@@ -35,6 +36,20 @@ double coins;
         coins = 0;
     }
     return self;
+}
+
+- (SPInterstitialClient *)interstitialClient
+{
+    if (!_interstitialClient) {
+        @try {
+            _interstitialClient = [SponsorPaySDK interstitialClient];
+            _interstitialClient.delegate = self;
+        }
+        @catch (NSException *e) {
+            NSLog(@"Interstitial init exception %@", e.reason);
+        }
+    }
+    return _interstitialClient;
 }
 
 - (void)viewDidLoad
@@ -87,10 +102,55 @@ double coins;
 
 #pragma mark - Interstitials
 - (IBAction)checkInterstitial {
-    self.showInterstitialButton.enabled = !self.showInterstitialButton.enabled;
+    [self.interstitialClient checkInterstitialAvailable];
 }
 
 - (IBAction)showInterstitial {
+    [self.interstitialClient showInterstitialFromViewController:self];
+}
+
+#pragma mark - SPInterstitialClientDelegate implementation
+- (void)interstitialClient:(SPInterstitialClient *)client
+       canShowInterstitial:(BOOL)canShowInterstitial
+{
+    if (canShowInterstitial) {
+        self.showInterstitialButton.enabled = YES;
+    }
+}
+
+- (void)interstitialClientDidShowInterstitial:(SPInterstitialClient *)client
+{
+    NSLog(@"An interstitial ad is being shown right now");
+    self.showInterstitialButton.enabled = NO;
+}
+
+- (void)interstitialClient:(SPInterstitialClient *)client
+didDismissInterstitialWithReason:(SPInterstitialDismissReason)dismissReason
+{
+    NSString *reasonDescription = nil;
+    switch (dismissReason) {
+            
+        case SPInterstitialDismissReasonUserClickedOnAd:
+            reasonDescription = @"because the user clicked on it";
+            break;
+            
+        case SPInterstitialDismissReasonUserClosedAd:
+            reasonDescription = @"because the user explicitly closed it";
+            break;
+            
+        case SPInterstitialDismissReasonUnknown:
+            reasonDescription = @"for an unknown reason (either click or explicit dismiss)";
+            break;
+    }
+    
+    NSLog(@"The interstitial ad was dismissed %@", reasonDescription);
+    self.showInterstitialButton.enabled = NO;
+}
+
+- (void)interstitialClient:(SPInterstitialClient *)client
+          didFailWithError:(NSError *)error
+{
+    NSLog(@"An error occured while requesting or showing the interstitial %@", error);
     self.showInterstitialButton.enabled = NO;
 }
 
