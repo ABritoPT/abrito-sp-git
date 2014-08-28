@@ -272,8 +272,8 @@
 		D14D591C1980060600FC1357 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D14D591E1980061000FC1357 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D14D59201980062700FC1357 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		D189FC0919AE405900CB4501 /* AppiaSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppiaSDK.bundle; sourceTree = "<group>"; };
-		D189FC0A19AE405900CB4501 /* AppiaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppiaSDK.framework; sourceTree = "<group>"; };
+		D189FC0919AE405900CB4501 /* AppiaSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppiaSDK.bundle; path = ../AppiaSDK.bundle; sourceTree = "<group>"; };
+		D189FC0A19AE405900CB4501 /* AppiaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppiaSDK.framework; path = ../AppiaSDK.framework; sourceTree = "<group>"; };
 		D189FC3D19AF204E00CB4501 /* SPAppiaInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppiaInterstitialAdapter.h; sourceTree = "<group>"; };
 		D189FC3E19AF204E00CB4501 /* SPAppiaInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppiaInterstitialAdapter.m; sourceTree = "<group>"; };
 		D189FC3F19AF204E00CB4501 /* SPAppiaNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppiaNetwork.h; sourceTree = "<group>"; };
@@ -350,8 +350,6 @@
 				D189FC4E19AF292F00CB4501 /* Security.framework */,
 				D189FC4C19AF291500CB4501 /* AVFoundation.framework */,
 				D189FC4A19AF290A00CB4501 /* ImageIO.framework */,
-				D189FC0919AE405900CB4501 /* AppiaSDK.bundle */,
-				D189FC0A19AE405900CB4501 /* AppiaSDK.framework */,
 				D14D59201980062700FC1357 /* AdSupport.framework */,
 				D14D591E1980061000FC1357 /* StoreKit.framework */,
 				D14D591C1980060600FC1357 /* CoreTelephony.framework */,
@@ -405,17 +403,8 @@
 		D14D584A1980048500FC1357 /* sponsorpay-sdk */ = {
 			isa = PBXGroup;
 			children = (
-				D18AEBAF19AF2DD400C8B083 /* libPlayAdsSDK.a */,
-				D18AEBB019AF2DD400C8B083 /* PlayAds.bundle */,
-				D18AEBB119AF2DD400C8B083 /* PlayAdsSDK.h */,
-				D189FC5019AF296800CB4501 /* SPAppLiftInterstitialAdapter.h */,
-				D189FC5119AF296800CB4501 /* SPAppLiftInterstitialAdapter.m */,
-				D189FC5219AF296800CB4501 /* SPAppLiftNetwork.h */,
-				D189FC5319AF296800CB4501 /* SPAppLiftNetwork.m */,
-				D189FC3D19AF204E00CB4501 /* SPAppiaInterstitialAdapter.h */,
-				D189FC3E19AF204E00CB4501 /* SPAppiaInterstitialAdapter.m */,
-				D189FC3F19AF204E00CB4501 /* SPAppiaNetwork.h */,
-				D189FC4019AF204E00CB4501 /* SPAppiaNetwork.m */,
+				D18AEBB419AF6AAA00C8B083 /* AppLift */,
+				D18AEBB519AF6AF300C8B083 /* Appia */,
 				D14D584B1980048500FC1357 /* LoadableCategory.h */,
 				D14D584C1980048500FC1357 /* NSDictionary+SPSerialization.h */,
 				D14D584D1980048500FC1357 /* NSDictionary+SPSerialization.m */,
@@ -561,6 +550,33 @@
 				D14D58551980048500FC1357 /* SPCloseX.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D18AEBB419AF6AAA00C8B083 /* AppLift */ = {
+			isa = PBXGroup;
+			children = (
+				D18AEBAF19AF2DD400C8B083 /* libPlayAdsSDK.a */,
+				D18AEBB019AF2DD400C8B083 /* PlayAds.bundle */,
+				D18AEBB119AF2DD400C8B083 /* PlayAdsSDK.h */,
+				D189FC5019AF296800CB4501 /* SPAppLiftInterstitialAdapter.h */,
+				D189FC5119AF296800CB4501 /* SPAppLiftInterstitialAdapter.m */,
+				D189FC5219AF296800CB4501 /* SPAppLiftNetwork.h */,
+				D189FC5319AF296800CB4501 /* SPAppLiftNetwork.m */,
+			);
+			name = AppLift;
+			sourceTree = "<group>";
+		};
+		D18AEBB519AF6AF300C8B083 /* Appia */ = {
+			isa = PBXGroup;
+			children = (
+				D189FC3D19AF204E00CB4501 /* SPAppiaInterstitialAdapter.h */,
+				D189FC3E19AF204E00CB4501 /* SPAppiaInterstitialAdapter.m */,
+				D189FC3F19AF204E00CB4501 /* SPAppiaNetwork.h */,
+				D189FC4019AF204E00CB4501 /* SPAppiaNetwork.m */,
+				D189FC0919AE405900CB4501 /* AppiaSDK.bundle */,
+				D189FC0A19AE405900CB4501 /* AppiaSDK.framework */,
+			);
+			name = Appia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
