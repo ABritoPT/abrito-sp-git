@@ -16,9 +16,6 @@
 		D14D5823197FB5DD00FC1357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14D5821197FB5DD00FC1357 /* Main.storyboard */; };
 		D14D5826197FB5DD00FC1357 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D5825197FB5DD00FC1357 /* ViewController.m */; };
 		D14D5828197FB5DD00FC1357 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14D5827197FB5DD00FC1357 /* Images.xcassets */; };
-		D14D582F197FB5DD00FC1357 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D582E197FB5DD00FC1357 /* XCTest.framework */; };
-		D14D5830197FB5DD00FC1357 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D580F197FB5DC00FC1357 /* Foundation.framework */; };
-		D14D5831197FB5DD00FC1357 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D5813197FB5DC00FC1357 /* UIKit.framework */; };
 		D14D5848197FE9CA00FC1357 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D5846197FE9CA00FC1357 /* MainViewController.m */; };
 		D14D5849197FE9CA00FC1357 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14D5847197FE9CA00FC1357 /* MainViewController.xib */; };
 		D14D58D71980048500FC1357 /* NSDictionary+SPSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D584D1980048500FC1357 /* NSDictionary+SPSerialization.m */; };
@@ -101,16 +98,6 @@
 		D18AEBB319AF2DD400C8B083 /* PlayAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D18AEBB019AF2DD400C8B083 /* PlayAds.bundle */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D14D5832197FB5DD00FC1357 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D14D5804197FB5DC00FC1357 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D14D580B197FB5DC00FC1357;
-			remoteInfo = "SDK Integration Test";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		D14D580C197FB5DC00FC1357 /* SDK Integration Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDK Integration Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14D580F197FB5DC00FC1357 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -126,7 +113,6 @@
 		D14D5824197FB5DD00FC1357 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D14D5825197FB5DD00FC1357 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D14D5827197FB5DD00FC1357 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D14D582D197FB5DD00FC1357 /* SDK Integration TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SDK Integration TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14D582E197FB5DD00FC1357 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D14D5845197FE9CA00FC1357 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D14D5846197FE9CA00FC1357 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -312,16 +298,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D14D582A197FB5DD00FC1357 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D14D582F197FB5DD00FC1357 /* XCTest.framework in Frameworks */,
-				D14D5831197FB5DD00FC1357 /* UIKit.framework in Frameworks */,
-				D14D5830197FB5DD00FC1357 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -339,7 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				D14D580C197FB5DC00FC1357 /* SDK Integration Test.app */,
-				D14D582D197FB5DD00FC1357 /* SDK Integration TestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -599,24 +574,6 @@
 			productReference = D14D580C197FB5DC00FC1357 /* SDK Integration Test.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D14D582C197FB5DD00FC1357 /* SDK Integration TestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D14D5841197FB5DD00FC1357 /* Build configuration list for PBXNativeTarget "SDK Integration TestTests" */;
-			buildPhases = (
-				D14D5829197FB5DD00FC1357 /* Sources */,
-				D14D582A197FB5DD00FC1357 /* Frameworks */,
-				D14D582B197FB5DD00FC1357 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D14D5833197FB5DD00FC1357 /* PBXTargetDependency */,
-			);
-			name = "SDK Integration TestTests";
-			productName = "SDK Integration TestTests";
-			productReference = D14D582D197FB5DD00FC1357 /* SDK Integration TestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -625,11 +582,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = SponsorPay;
-				TargetAttributes = {
-					D14D582C197FB5DD00FC1357 = {
-						TestTargetID = D14D580B197FB5DC00FC1357;
-					};
-				};
 			};
 			buildConfigurationList = D14D5807197FB5DC00FC1357 /* Build configuration list for PBXProject "SDK Integration Test" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -645,7 +597,6 @@
 			projectRoot = "";
 			targets = (
 				D14D580B197FB5DC00FC1357 /* SDK Integration Test */,
-				D14D582C197FB5DD00FC1357 /* SDK Integration TestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -662,13 +613,6 @@
 				D14D5823197FB5DD00FC1357 /* Main.storyboard in Resources */,
 				D189FC0B19AE405900CB4501 /* AppiaSDK.bundle in Resources */,
 				D14D5849197FE9CA00FC1357 /* MainViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D14D582B197FB5DD00FC1357 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,22 +694,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D14D5829197FB5DD00FC1357 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D14D5833197FB5DD00FC1357 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D14D580B197FB5DC00FC1357 /* SDK Integration Test */;
-			targetProxy = D14D5832197FB5DD00FC1357 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D14D5818197FB5DD00FC1357 /* InfoPlist.strings */ = {
@@ -909,46 +838,6 @@
 			};
 			name = Release;
 		};
-		D14D5842197FB5DD00FC1357 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SDK Integration Test.app/SDK Integration Test";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SDK Integration Test/SDK Integration Test-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "SDK Integration TestTests/SDK Integration TestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		D14D5843197FB5DD00FC1357 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SDK Integration Test.app/SDK Integration Test";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SDK Integration Test/SDK Integration Test-Prefix.pch";
-				INFOPLIST_FILE = "SDK Integration TestTests/SDK Integration TestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -966,15 +855,6 @@
 			buildConfigurations = (
 				D14D583F197FB5DD00FC1357 /* Debug */,
 				D14D5840197FB5DD00FC1357 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D14D5841197FB5DD00FC1357 /* Build configuration list for PBXNativeTarget "SDK Integration TestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D14D5842197FB5DD00FC1357 /* Debug */,
-				D14D5843197FB5DD00FC1357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
