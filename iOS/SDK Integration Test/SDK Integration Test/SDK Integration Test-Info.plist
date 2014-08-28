@@ -2,6 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SPNetworks</key>
+	<array>
+		<dict>
+			<key>SPNetworkName</key>
+			<string>AppLift</string>
+			<key>SPNetworkParameters</key>
+			<dict>
+				<key>SPAppLiftAppId</key>
+				<string>1004151</string>
+				<key>SPAppLiftSecretToken</key>
+				<string>a5bc56d7c89b182709929cd12656796b86f72191d36c29153db4a1c5240ed19c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>SPNetworkName</key>
+			<string>Appia</string>
+			<key>SPNetworkParameters</key>
+			<dict>
+				<key>SPAppiaSiteId</key>
+				<string>com.sponsorpay.SponsorPaySample</string>
+				<key>SPAppiaPlacementIdInterstitial</key>
+				<string>1</string>
+			</dict>
+		</dict>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>

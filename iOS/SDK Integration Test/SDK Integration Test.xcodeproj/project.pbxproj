@@ -19,8 +19,6 @@
 		D14D582F197FB5DD00FC1357 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D582E197FB5DD00FC1357 /* XCTest.framework */; };
 		D14D5830197FB5DD00FC1357 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D580F197FB5DC00FC1357 /* Foundation.framework */; };
 		D14D5831197FB5DD00FC1357 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D5813197FB5DC00FC1357 /* UIKit.framework */; };
-		D14D5839197FB5DD00FC1357 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D14D5837197FB5DD00FC1357 /* InfoPlist.strings */; };
-		D14D583B197FB5DD00FC1357 /* SDK_Integration_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D583A197FB5DD00FC1357 /* SDK_Integration_TestTests.m */; };
 		D14D5848197FE9CA00FC1357 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D5846197FE9CA00FC1357 /* MainViewController.m */; };
 		D14D5849197FE9CA00FC1357 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14D5847197FE9CA00FC1357 /* MainViewController.xib */; };
 		D14D58D71980048500FC1357 /* NSDictionary+SPSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D14D584D1980048500FC1357 /* NSDictionary+SPSerialization.m */; };
@@ -88,8 +86,19 @@
 		D14D5919198005F300FC1357 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D5918198005F300FC1357 /* MediaPlayer.framework */; };
 		D14D591B198005FD00FC1357 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D591A198005FD00FC1357 /* SystemConfiguration.framework */; };
 		D14D591D1980060600FC1357 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D591C1980060600FC1357 /* CoreTelephony.framework */; };
-		D14D591F1980061000FC1357 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D591E1980061000FC1357 /* StoreKit.framework */; };
+		D14D591F1980061000FC1357 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D591E1980061000FC1357 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D14D59211980062700FC1357 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D59201980062700FC1357 /* AdSupport.framework */; };
+		D189FC0B19AE405900CB4501 /* AppiaSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D189FC0919AE405900CB4501 /* AppiaSDK.bundle */; };
+		D189FC0C19AE405900CB4501 /* AppiaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D189FC0A19AE405900CB4501 /* AppiaSDK.framework */; };
+		D189FC4119AF204E00CB4501 /* SPAppiaInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D189FC3E19AF204E00CB4501 /* SPAppiaInterstitialAdapter.m */; };
+		D189FC4219AF204E00CB4501 /* SPAppiaNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = D189FC4019AF204E00CB4501 /* SPAppiaNetwork.m */; };
+		D189FC4B19AF290A00CB4501 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D189FC4A19AF290A00CB4501 /* ImageIO.framework */; };
+		D189FC4D19AF291500CB4501 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D189FC4C19AF291500CB4501 /* AVFoundation.framework */; };
+		D189FC4F19AF292F00CB4501 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D189FC4E19AF292F00CB4501 /* Security.framework */; };
+		D189FC5419AF296800CB4501 /* SPAppLiftInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D189FC5119AF296800CB4501 /* SPAppLiftInterstitialAdapter.m */; };
+		D189FC5519AF296800CB4501 /* SPAppLiftNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = D189FC5319AF296800CB4501 /* SPAppLiftNetwork.m */; };
+		D18AEBB219AF2DD400C8B083 /* libPlayAdsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D18AEBAF19AF2DD400C8B083 /* libPlayAdsSDK.a */; };
+		D18AEBB319AF2DD400C8B083 /* PlayAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D18AEBB019AF2DD400C8B083 /* PlayAds.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,9 +128,6 @@
 		D14D5827197FB5DD00FC1357 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D14D582D197FB5DD00FC1357 /* SDK Integration TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SDK Integration TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14D582E197FB5DD00FC1357 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D14D5836197FB5DD00FC1357 /* SDK Integration TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDK Integration TestTests-Info.plist"; sourceTree = "<group>"; };
-		D14D5838197FB5DD00FC1357 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D14D583A197FB5DD00FC1357 /* SDK_Integration_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDK_Integration_TestTests.m; sourceTree = "<group>"; };
 		D14D5845197FE9CA00FC1357 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D14D5846197FE9CA00FC1357 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D14D5847197FE9CA00FC1357 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -266,6 +272,22 @@
 		D14D591C1980060600FC1357 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D14D591E1980061000FC1357 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D14D59201980062700FC1357 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D189FC0919AE405900CB4501 /* AppiaSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppiaSDK.bundle; sourceTree = "<group>"; };
+		D189FC0A19AE405900CB4501 /* AppiaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppiaSDK.framework; sourceTree = "<group>"; };
+		D189FC3D19AF204E00CB4501 /* SPAppiaInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppiaInterstitialAdapter.h; sourceTree = "<group>"; };
+		D189FC3E19AF204E00CB4501 /* SPAppiaInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppiaInterstitialAdapter.m; sourceTree = "<group>"; };
+		D189FC3F19AF204E00CB4501 /* SPAppiaNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppiaNetwork.h; sourceTree = "<group>"; };
+		D189FC4019AF204E00CB4501 /* SPAppiaNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppiaNetwork.m; sourceTree = "<group>"; };
+		D189FC4A19AF290A00CB4501 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D189FC4C19AF291500CB4501 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D189FC4E19AF292F00CB4501 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D189FC5019AF296800CB4501 /* SPAppLiftInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppLiftInterstitialAdapter.h; sourceTree = "<group>"; };
+		D189FC5119AF296800CB4501 /* SPAppLiftInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppLiftInterstitialAdapter.m; sourceTree = "<group>"; };
+		D189FC5219AF296800CB4501 /* SPAppLiftNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppLiftNetwork.h; sourceTree = "<group>"; };
+		D189FC5319AF296800CB4501 /* SPAppLiftNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppLiftNetwork.m; sourceTree = "<group>"; };
+		D18AEBAF19AF2DD400C8B083 /* libPlayAdsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPlayAdsSDK.a; sourceTree = "<group>"; };
+		D18AEBB019AF2DD400C8B083 /* PlayAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PlayAds.bundle; sourceTree = "<group>"; };
+		D18AEBB119AF2DD400C8B083 /* PlayAdsSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayAdsSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,7 +295,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D189FC4F19AF292F00CB4501 /* Security.framework in Frameworks */,
+				D189FC4D19AF291500CB4501 /* AVFoundation.framework in Frameworks */,
+				D189FC4B19AF290A00CB4501 /* ImageIO.framework in Frameworks */,
 				D14D59211980062700FC1357 /* AdSupport.framework in Frameworks */,
+				D189FC0C19AE405900CB4501 /* AppiaSDK.framework in Frameworks */,
 				D14D591F1980061000FC1357 /* StoreKit.framework in Frameworks */,
 				D14D591D1980060600FC1357 /* CoreTelephony.framework in Frameworks */,
 				D14D591B198005FD00FC1357 /* SystemConfiguration.framework in Frameworks */,
@@ -282,6 +308,7 @@
 				D14D5812197FB5DC00FC1357 /* CoreGraphics.framework in Frameworks */,
 				D14D5814197FB5DC00FC1357 /* UIKit.framework in Frameworks */,
 				D14D5810197FB5DC00FC1357 /* Foundation.framework in Frameworks */,
+				D18AEBB219AF2DD400C8B083 /* libPlayAdsSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +329,6 @@
 			isa = PBXGroup;
 			children = (
 				D14D5815197FB5DC00FC1357 /* SDK Integration Test */,
-				D14D5834197FB5DD00FC1357 /* SDK Integration TestTests */,
 				D14D584A1980048500FC1357 /* sponsorpay-sdk */,
 				D14D580E197FB5DC00FC1357 /* Frameworks */,
 				D14D580D197FB5DC00FC1357 /* Products */,
@@ -321,6 +347,11 @@
 		D14D580E197FB5DC00FC1357 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D189FC4E19AF292F00CB4501 /* Security.framework */,
+				D189FC4C19AF291500CB4501 /* AVFoundation.framework */,
+				D189FC4A19AF290A00CB4501 /* ImageIO.framework */,
+				D189FC0919AE405900CB4501 /* AppiaSDK.bundle */,
+				D189FC0A19AE405900CB4501 /* AppiaSDK.framework */,
 				D14D59201980062700FC1357 /* AdSupport.framework */,
 				D14D591E1980061000FC1357 /* StoreKit.framework */,
 				D14D591C1980060600FC1357 /* CoreTelephony.framework */,
@@ -364,24 +395,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D14D5834197FB5DD00FC1357 /* SDK Integration TestTests */ = {
-			isa = PBXGroup;
-			children = (
-				D14D583A197FB5DD00FC1357 /* SDK_Integration_TestTests.m */,
-				D14D5835197FB5DD00FC1357 /* Supporting Files */,
-			);
-			path = "SDK Integration TestTests";
-			sourceTree = "<group>";
-		};
-		D14D5835197FB5DD00FC1357 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D14D5836197FB5DD00FC1357 /* SDK Integration TestTests-Info.plist */,
-				D14D5837197FB5DD00FC1357 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D14D5844197FB7B700FC1357 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +405,17 @@
 		D14D584A1980048500FC1357 /* sponsorpay-sdk */ = {
 			isa = PBXGroup;
 			children = (
+				D18AEBAF19AF2DD400C8B083 /* libPlayAdsSDK.a */,
+				D18AEBB019AF2DD400C8B083 /* PlayAds.bundle */,
+				D18AEBB119AF2DD400C8B083 /* PlayAdsSDK.h */,
+				D189FC5019AF296800CB4501 /* SPAppLiftInterstitialAdapter.h */,
+				D189FC5119AF296800CB4501 /* SPAppLiftInterstitialAdapter.m */,
+				D189FC5219AF296800CB4501 /* SPAppLiftNetwork.h */,
+				D189FC5319AF296800CB4501 /* SPAppLiftNetwork.m */,
+				D189FC3D19AF204E00CB4501 /* SPAppiaInterstitialAdapter.h */,
+				D189FC3E19AF204E00CB4501 /* SPAppiaInterstitialAdapter.m */,
+				D189FC3F19AF204E00CB4501 /* SPAppiaNetwork.h */,
+				D189FC4019AF204E00CB4501 /* SPAppiaNetwork.m */,
 				D14D584B1980048500FC1357 /* LoadableCategory.h */,
 				D14D584C1980048500FC1357 /* NSDictionary+SPSerialization.h */,
 				D14D584D1980048500FC1357 /* NSDictionary+SPSerialization.m */,
@@ -615,10 +639,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18AEBB319AF2DD400C8B083 /* PlayAds.bundle in Resources */,
 				D14D5828197FB5DD00FC1357 /* Images.xcassets in Resources */,
 				D14D581A197FB5DD00FC1357 /* InfoPlist.strings in Resources */,
 				D14D58DB1980048500FC1357 /* SPCloseX.png in Resources */,
 				D14D5823197FB5DD00FC1357 /* Main.storyboard in Resources */,
+				D189FC0B19AE405900CB4501 /* AppiaSDK.bundle in Resources */,
 				D14D5849197FE9CA00FC1357 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,7 +653,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14D5839197FB5DD00FC1357 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +700,9 @@
 				D14D59021980048500FC1357 /* SPReachability.m in Sources */,
 				D14D58E31980048500FC1357 /* SPBrandEngageViewController.m in Sources */,
 				D14D58EB1980048500FC1357 /* SPCredentialsManager.m in Sources */,
+				D189FC4119AF204E00CB4501 /* SPAppiaInterstitialAdapter.m in Sources */,
+				D189FC5519AF296800CB4501 /* SPAppLiftNetwork.m in Sources */,
+				D189FC5419AF296800CB4501 /* SPAppLiftInterstitialAdapter.m in Sources */,
 				D14D59051980048500FC1357 /* SPScreenMetricsProvider.m in Sources */,
 				D14D59071980048500FC1357 /* SPSDKVersionProvider.m in Sources */,
 				D14D590E1980048500FC1357 /* SPTargetedNotificationFilter.m in Sources */,
@@ -696,6 +724,7 @@
 				D14D58FE1980048500FC1357 /* SPOfferWallViewController.m in Sources */,
 				D14D58E41980048500FC1357 /* SPBrandEngageWebView.m in Sources */,
 				D14D59141980048500FC1357 /* SPVideoPlayerViewController.m in Sources */,
+				D189FC4219AF204E00CB4501 /* SPAppiaNetwork.m in Sources */,
 				D14D590A1980048500FC1357 /* SPSignature.m in Sources */,
 				D14D58EC1980048500FC1357 /* SPHostAppBundleParametersProvider.m in Sources */,
 				D14D59111980048500FC1357 /* SPTPNManager.m in Sources */,
@@ -709,7 +738,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14D583B197FB5DD00FC1357 /* SDK_Integration_TestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,14 +766,6 @@
 				D14D5822197FB5DD00FC1357 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D14D5837197FB5DD00FC1357 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D14D5838197FB5DD00FC1357 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -827,10 +847,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SDK Integration Test/SDK Integration Test-Prefix.pch";
 				INFOPLIST_FILE = "SDK Integration Test/SDK Integration Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/sponsorpay-sdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -843,10 +873,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SDK Integration Test/SDK Integration Test-Prefix.pch";
 				INFOPLIST_FILE = "SDK Integration Test/SDK Integration Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/sponsorpay-sdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
