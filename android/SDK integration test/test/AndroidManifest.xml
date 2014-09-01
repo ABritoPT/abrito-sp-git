@@ -65,7 +65,7 @@
         <!-- Flurry -->
         <activity
             android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize"
             android:hardwareAccelerated="true" />
         
         <!-- Vungle -->
@@ -137,6 +137,20 @@
             android:label="HyprMX SDK"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.NoTitleBar" />
+        
+        <!-- Ebuzzing -->
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.ebuzzing.sdk.activities.EbzFullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.ebuzzing.sdk.activities.EbzBrowser"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
 </application>
 
 </manifest>
