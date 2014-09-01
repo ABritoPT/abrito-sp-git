@@ -1,24 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/al_global_black" >
-
-    <ImageView
-        android:id="@+id/ImageView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:adjustViewBounds="false"
-        android:background="#0000"
-        android:scaleType="centerCrop"
-        android:visibility="invisible" />
+    android:background="@color/al_black" >
 
     <ImageView
         android:id="@+id/daily_game_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/daily_store_btn"
+        android:layout_above="@+id/btn_download"
         android:adjustViewBounds="false"
         android:scaleType="fitXY" />
 
@@ -26,7 +16,7 @@
         android:id="@+id/shadow"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_above="@+id/daily_store_btn"
+        android:layout_above="@+id/btn_download"
         android:background="@drawable/al_daily_footer"
         android:orientation="vertical" >
     </LinearLayout>
@@ -62,7 +52,7 @@
         android:id="@+id/daily_info_bot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/daily_store_btn"
+        android:layout_above="@+id/btn_download"
         android:orientation="horizontal"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
@@ -90,21 +80,19 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/daily_store_btn"
-        style="@style/AL_DailyButtonStyle"
+        android:id="@+id/btn_download"
+        style="@style/AL_DownloadButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@color/al_btn_green_end"
-        android:drawableLeft="@drawable/al_play_store_icon_small" />
+        android:layout_marginRight="10dp" />
 
     <com.applift.playads.ui.widget.BrandingView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/daily_store_btn"
+        android:layout_above="@id/btn_download"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="8dp" />
 

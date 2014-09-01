@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/row_game_root"
     android:layout_width="match_parent"
@@ -18,7 +19,7 @@
         android:layout_toRightOf="@id/row_game_image"
         android:ellipsize="end"
         android:singleLine="true"
-        android:textColor="@color/al_global_dark_grey"
+        android:textColor="@color/al_dark_grey"
         android:textSize="15sp"
         android:textStyle="bold" />
 

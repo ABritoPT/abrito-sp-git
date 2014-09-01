@@ -35,6 +35,7 @@ And declares an Activity:
 
    <activity
        android:name="com.applift.playads.PlayAdsActivity"
+       android:configChanges="keyboardHidden|orientation|screenSize"
        android:taskAffinity="com.applift.playads"
        android:theme="@style/Theme.PlayAds" />
 
@@ -88,16 +89,19 @@ implement the interface).
 
 Showing Promotions
 ------------------
-PlayAds SDK has 4 methods that relate to showing promos:
+PlayAds SDK has 6 methods that relate to showing promos:
 
-   cache()
-   show(Activity act)
+   void cache()
+   boolean show(Activity act)
+   boolean show(Activity act, boolean cacheIfNeeded)
 
-   cache(PlayAdsType type)
-   show(Activity act, PlayAdsType type)
-   
-As it's easy to tell from the names, a pair of methods is used to cache
-a promo while the other pair is used to display it.
+   void cache(PlayAdsType type)
+   boolean show(Activity act, PlayAdsType type)
+   boolean show(Activity act, boolean cacheIfNeeded, PlayAdsType type)
+
+2 methods are used to cache.
+2 show are used to display previously cached promos.
+2 methods can show previously caching if needed.
 
 The PlayAdsTypes are:
 - GIFT_SCREEN
@@ -106,10 +110,13 @@ The PlayAdsTypes are:
 - SLOT_MACHINE
 - MEMORY_GAME
 - COVER_FLOW
-- LIGHT_WEIGHT
+- INTERSTITIAL
+- VIDEO
 
 While it is recommended to cache first, it's safe to call show(...) without caching.
 In this case the user will see a loading spinner until a promo is ready.
+
+If cacheIfNeeded is set to false, showing without caching first will fail
 
 * Listener's onClosed() callback is a good place to cache the next promo.
 

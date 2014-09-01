@@ -21,45 +21,7 @@
          ]
       },
       {
-         "qualifiedName":"com.sponsorpay.mediation.AppLiftMediationAdapter",
-         "versions":[
-            "1.0.0",
-            "1.0.1"
-         ]
-      },
-      {
-         "qualifiedName":"com.sponsorpay.mediation.AppLovinMediationAdapter",
-         "versions":[
-            "1.1.0",
-            "1.2.0"
-         ]
-      },
-      {
-         "qualifiedName":"com.sponsorpay.mediation.AppiaMediationAdapter",
-         "versions":[
-            "1.0.0"
-         ]
-      },
-      {
          "qualifiedName":"com.sponsorpay.mediation.InMobiMediationAdapter",
-         "versions":[
-            "1.0.0"
-         ]
-      },
-      {
-         "qualifiedName":"com.sponsorpay.mediation.YuMeMediationAdapter",
-         "versions":[
-            "1.0.0"
-         ]
-      },
-      {
-         "qualifiedName":"com.sponsorpay.mediation.MillennialMediationAdapter",
-         "versions":[
-            "1.0.0"
-         ]
-      },
-      {
-         "qualifiedName":"com.sponsorpay.mediation.AdMobMediationAdapter",
          "versions":[
             "1.0.0"
          ]
@@ -74,6 +36,14 @@
          "qualifiedName": "com.sponsorpay.mediation.HyprMXMediationAdapter",
          "versions": [
             "1.0.0"
+         ]
+      },
+      {
+         "qualifiedName":"com.sponsorpay.mediation.AppLiftMediationAdapter",
+         "versions":[
+            "1.0.0",
+            "1.0.1",
+            "1.1.0"
          ]
       }
    ]

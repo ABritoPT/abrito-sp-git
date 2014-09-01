@@ -24,7 +24,7 @@
         android:id="@+id/al_view_overlay"
         android:layout_width="@dimen/al_memory_cell_size"
         android:layout_height="@dimen/al_memory_cell_size"
-        android:background="@color/al_global_white_transparent"
+        android:background="@color/al_white_transparent"
         android:visibility="gone" />
 
 </FrameLayout>

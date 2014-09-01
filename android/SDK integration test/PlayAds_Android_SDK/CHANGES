@@ -1,3 +1,20 @@
+4.0.0 /2014-07-04/:
+	* Video: rotation support.
+	* Removed GiftScreen.
+	* MemoryGame: hint on first load.
+	* PlayAds: added show methods with "boolean cacheIfNeeded" argument.
+	* PlayAds: changed show methods behavior to fail if not cached first.
+
+3.5.0 /2014-05-05/:
+	* Video format.
+	* Don't restart Activity on rotation.
+	* Minor improvements.
+
+3.0.2 /2014-04-02/:
+	* Optimized app list submission.
+	* Fixed Unity3D rotation crash.
+	* GameList: fixed incorrect game shown in two-column mode.
+
 3.0.1 /2014-02-24/:
 	* Fixed an issue with PlayStore brought to the front.
 

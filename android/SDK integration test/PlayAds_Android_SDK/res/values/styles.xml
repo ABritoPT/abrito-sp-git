@@ -22,7 +22,7 @@
     <!--  -->
 
     <style name="AL_CurrentPriceStyle">
-        <item name="android:textColor">@color/al_global_orange</item>
+        <item name="android:textColor">@color/al_orange</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">15sp</item>
     </style>
@@ -30,13 +30,13 @@
     <!-- Daily Styles -->
 
     <style name="AL_DailyCurrentPrice" parent="@style/_AL_DarkShadedTextStyle">
-        <item name="android:textColor">@color/al_global_orange</item>
+        <item name="android:textColor">@color/al_orange</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">20sp</item>
     </style>
 
     <style name="AL_DailyTileText" parent="@style/_AL_DarkShadedTextStyle">
-        <item name="android:textColor">@color/al_global_white</item>
+        <item name="android:textColor">@color/al_white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">18sp</item>
     </style>
@@ -44,25 +44,28 @@
     <!-- Categories Styles -->
 
     <style name="AL_TagTextStyle">
-        <item name="android:textColor">@color/al_global_white</item>
+        <item name="android:textColor">@color/al_white</item>
         <item name="android:textSize">10sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:background">@drawable/al_shape_tag</item>
     </style>
 
-    <style name="AL_DailyButtonStyle" parent="@style/_AL_ShadedTextStyle">
-        <item name="android:textColor">@color/al_global_white</item>
+    <style name="AL_DownloadButtonStyle" parent="@style/_AL_ShadedTextStyle">
+        <item name="android:textColor">@color/al_white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:padding">5dip</item>
-        <item name="android:minHeight">45dip</item>
-        <item name="android:background">@color/al_btn_green_end</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">34dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:background">@color/al_btn_green</item>
+        <item name="android:drawableLeft">@drawable/al_play_store_icon_small</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="AL_DailyInfoBox">
-        <item name="android:textColor">@color/al_global_white</item>
+        <item name="android:textColor">@color/al_white</item>
         <item name="android:textSize">12sp</item>
-        <item name="android:padding">5dip</item>
+        <item name="android:padding">5dp</item>
         <item name="android:background">@drawable/al_dark_grey_box</item>
     </style>
 
