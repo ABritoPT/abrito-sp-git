@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     
     <!-- Additional stuff for InMobi -->
@@ -151,6 +152,12 @@
             android:name="com.ebuzzing.sdk.activities.EbzBrowser"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
+        
+        <!-- AppLovin -->
+        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
+        <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />
+        <meta-data android:name="applovin.sdk.key" 
+            android:value="XKRiiK6KGT0lozW5QhDtTXPBcL0mm5lIQA07U6SmfSVRQ1XskliCH6NuSNdCTNUuTV01bSoGwIhKJEA2-uEF_b"  />
 </application>
 
 </manifest>
