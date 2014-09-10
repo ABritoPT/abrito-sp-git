@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.flurry.android.FlurryAgent;
 import com.sponsorpay.SponsorPay;
 import com.sponsorpay.publisher.SponsorPayPublisher;
 import com.sponsorpay.publisher.currency.SPCurrencyServerErrorResponse;
@@ -91,6 +92,7 @@ public class MainActivity extends ActionBarActivity implements SPBrandEngageRequ
     	super.onResume();
     	
     	try {
+    		FlurryAgent.setLogEnabled(true);
             SponsorPay.start(APP_ID, USER_ID, SECURITY_TOKEN, this);
         } catch (RuntimeException e){
             Log.d(TAG, e.getLocalizedMessage());
