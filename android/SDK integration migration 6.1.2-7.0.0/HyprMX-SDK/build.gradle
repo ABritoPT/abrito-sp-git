@@ -1,0 +1,47 @@
+apply plugin: 'android-library'
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile fileTree(dir: 'libs', include: '**/*.jar', exclude: 'android-support-v4.jar')
+    compile files('libs/hyprmx-sdk-internal.jar') // explicitly declare in case not yet copied to dir from internal yet
+}
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "19.0.1"
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        instrumentTest.setRoot('tests')
+
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}
+
+task updateLibraryProject(type: Exec) {
+    commandLine System.getenv('ANDROID_HOME') + '/tools/android', 'update', 'lib-project', '--path', '.'
+    if (execResult)
+        execResult.assertNormalExitValue()
+}
+
+task updateExampleProject(type: Exec) {
+    workingDir '../HyprMX-Example-App'
+    commandLine System.getenv('ANDROID_HOME') + '/tools/android', 'update', 'project', '--path', '.'
+    if (execResult)
+        execResult.assertNormalExitValue()
+}
+
+task setup(dependsOn: [updateLibraryProject, updateExampleProject]) << { }
+
+preBuild.dependsOn setup
+clean.dependsOn setup

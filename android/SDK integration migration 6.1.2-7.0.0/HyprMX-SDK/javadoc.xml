@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" additionalparam=" -linkoffline http://d.android.com/reference file:/android-sdks/docs/reference" author="true" classpath="libs/jackson-mapper-asl-1.9.2.jar:/Users/jeremy/android-sdks/tools/support/annotations.jar:libs/hyprmx-sdk-internal.jar:libs/jackson-core-asl-1.9.2.jar:libs/restclient.jar:/Users/jeremy/android-sdks/platforms/android-7/android.jar" destdir="/Users/jeremy/Code/Projects/HyprMX-Mobile-Android-SDK/Docs/Javadoc" doctitle="HyprMX Android SDK" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.hyprmx.android.sdk.view,com.hyprmx.android.api,com.hyprmx.android.sdk.data" source="1.6" sourcefiles="src/com/hyprmx/android/sdk/HyprMXHelper.java" sourcepath="src:gen" splitindex="true" use="true" version="true">
+            <link href="file:/Users/jeremy/android-sdks/docs/reference"/>
+        </javadoc>
+    </target>
+</project>
