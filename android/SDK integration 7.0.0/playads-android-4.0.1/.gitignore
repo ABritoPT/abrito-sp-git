@@ -1,0 +1,15 @@
+.DS_Store
+
+local.properties
+
+.gradle/
+build/
+dist/
+
+bin/
+gen/
+proguard/
+target/
+*.bat
+*.meta
+/bin
